@@ -1,0 +1,56 @@
+/*Set the background color*/
+.meme {
+    height: 200px;
+    background: -webkit-linear-gradient(left, orange, yellow, green, cyan, blue, violet);
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right, orange, yellow, green, cyan, blue, violet);
+    font-family: "Monaco"
+}
+
+/*Customize submit button. Create gaudy button to emphasize meme*/
+button {
+    background-color: rgb(228, 11, 156);
+    color: rgb(17, 213, 223);
+    padding: 20px 20px;
+    font-size: 20px;
+    border-radius: 200px;
+    letter-spacing: 20px;
+    font-family: Monaco;
+}
+
+/*Customize font of meme text outputs*/
+.memeCaptions {
+    align-items: center;
+    position: absolute;
+    font-size: 50px;
+    font-family: Monaco;
+    color: white;
+    text-transform: uppercase;
+}
+
+/*Standardize image size and positioning of top and bottom texts*/
+.img {
+    height: 1000px;
+    width: 1000px;
+}
+
+.topFormat {
+    top: 0px;
+}
+
+.bottomFormat {
+    bottom: 0px;
+}
+
+/*Container is appended with image and texts. It is then appended to memeGenerator*/
+.container {
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+}
+
+/*Set up to ensure generated meme is in the center*/
+#memeGenerator {
+    justify-content: center;
+}
